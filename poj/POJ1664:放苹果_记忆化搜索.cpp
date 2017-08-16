@@ -19,7 +19,7 @@ int dfs(int i, int k){
     else return dp[i][k] = dfs(i,k-1) + dfs(i-k,k);
 }
 int main(){
-    freopen("input.txt","r",stdin);
+  //  freopen("input.txt","r",stdin)
     ios::sync_with_stdio(false);
     int i, k, t;
     cin >> t;
