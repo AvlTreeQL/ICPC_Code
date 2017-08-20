@@ -20,10 +20,10 @@ int main(){
         }
         sort(a,a+n);
         int s = 0, ans = 0;
-        while(s<n){
-            int pos = lower_bound(a+s,a+n,a[s]+r)-a-1;
-            ans++;
-            s = upper_bound(a+pos,a+n,a[pos]+r)-a;
+        while(s<n){                                   // upper_bound()      > val的第一个下标, 有多个val返回最后一个val的下标
+            int pos = upper_bound(a+s,a+n,a[s]+r)-a-1;// upper_bound()-1    <=val的第一个下标
+            ans++;                                    // lower_bound()      >=val的第一个下标，有多个val返回第一个val的下标
+            s = upper_bound(a+pos,a+n,a[pos]+r)-a;    // lower_bound()-1    < val的第一个下标
         }
         cout << ans << endl;
     }

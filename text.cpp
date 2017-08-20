@@ -8,26 +8,13 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int a[]
-bool dfs(int x, int sum)
-{
-    if(x == n) {
-        if(sum == k) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    if(dfs(x + 1, sum + a[x]) return true;
-            else if(dfs(x + 1, sum)) return true;
-                return false;
-
-
-    }
 int main()
 {
-    freopen("input.txt", "r", stdin);
+ //   freopen("input.txt", "r", stdin);
     ios::sync_with_stdio(false);
-
+ //   while(1){
+        char c = cin.peek();
+        cout << c << endl;
+   // }
     return 0;
 }
