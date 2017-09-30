@@ -3,7 +3,7 @@
 
 输入格式
 
-输入包括两行，每行包括 N(1≤N≤50) 个数字，分别表示两个人对于 NN 个事情对应的看法—0 表示不赞同、1 表示赞同。
+输入包括两行，每行包括 N(1≤N≤50) 个数字，分别表示两个人对于 N 个事情对应的看法 0 表示不赞同、1 表示赞同。
 
 输出格式
 
@@ -31,6 +31,6 @@ int main() {
 	string aa, bb;
 	cin >> aa >> bb;
 	bitset<50> a(aa), b(bb);
-	cout <<(~(a^b)).to_string().substr(50-aa.length(),aa.length()) << endl;
+	cout <<(~(a^b)).to_string().substr(50-aa.length(),mZ()) << endl;
 	return 0;
 }
