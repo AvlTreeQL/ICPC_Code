@@ -105,7 +105,7 @@ int main()
     for(int i = 1; i <= scc; i++) {
         if(!out[i]) {
             if(ans == 0) ans = size[i];
-            else {
+            else { //如果存在两个出度为零的点，不存在被所有同学夸赞的人
                 ans = 0;
                 break;
             }

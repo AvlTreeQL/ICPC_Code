@@ -50,7 +50,6 @@ int find(int x) {
 	}
 	int y = f[x];
 	f[x] = find(f[x]);
-	_size[x] += _size[y];
 	return f[x];
 }
 void merge(int a, int b) {
